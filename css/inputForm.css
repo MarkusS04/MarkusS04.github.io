@@ -1,34 +1,9 @@
-h1
-{
-    color:cyan;
-    background-color: black;
-
-    text-align: center;
-    margin-inline: 30%;
-
-}
-
 input
 {
+    padding: 10px;
     margin: 5px;
+    font-size: 18px;
     text-align: center;
-
-
-}
-
-label
-{
-    color:cyan;
-    margin: 10px;
-    text-align: center;
-    font-size: 25px;
-}
-
-button
-{
-    margin: 20px;
-    padding: 15px;
-    font-size: 20px;
 }
 
 form
@@ -39,13 +14,6 @@ form
     text-align: center;
 }
 
-a
-{
-    color: cyan;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
 .inputField
 {
     display: flex;

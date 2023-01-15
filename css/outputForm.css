@@ -1,0 +1,12 @@
+.output
+{
+    display: none;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.outputText
+{
+    font-size: 40px;
+}
