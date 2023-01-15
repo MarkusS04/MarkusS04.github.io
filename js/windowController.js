@@ -1,4 +1,4 @@
 window.onbeforeunload = function()
 {
-    return ""
+    return "Wollen sie wirklich zurück?"
 };
