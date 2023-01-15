@@ -5,45 +5,55 @@
 </head>
 
 <body background="../jpg/background.jpg">
-    <h1>Dies ist ein Generator für das Spiel Mafia</h1>
+    <h1 class="text" style="font-size: 50px;">Dies ist ein Generator für das Spiel Mafia</h1>
     <div id="input_char" style="display: block;">
         <form>
             <div class="inputField">
-                <label>Bürger</label>
+                <label class="text">Bürger</label>
                 <input type="number" id="Buerger">
             </div>
             <div class="inputField">
-                <label>Mafia</label>
+                <label class="text">Mafia</label>
                 <input type="number" id="Mafia">
             </div>
             <div class="inputField">
-                <label>Spion</label>
+                <label class="text">Spion</label>
                 <input type="number" id="Spion">
             </div>
             <div class="inputField">
-                <label>Maulwurf</label>
+                <label class="text">Maulwurf</label>
                 <input type="number" id="Maulwurf">
             </div>
             <div class="inputField">
-                <label>Freimaurer</label>
+                <label class="text">Freimaurer</label>
                 <input type="number" id="Freimaurer">
             </div>
             <div class="inputField">
-                <label>Prophet</label>
+                <label class="text">Prophet</label>
                 <input type="number" id="Prophet">
             </div>
 
-            <button type="button" onclick="calc_rolles()">Rollen berechnen</button>
-        </form>
-    </div>
-    <div id="output_char" style="display: none; text-align: center;">
-                <label id="char">An nächste Person weitergeben</label>
-                <br>
-            <button type="button" onclick="get_next_char()" id="next">character anzeigen</button>
+            <button type="button" id="calcRolesBut">Rollen berechnen</button>
         </form>
     </div>
 
+    <div id="output_char" class="output">
+                <label class="text outputText" id="char">An nächste Person weitergeben</label>
+                <br>
+            <button type="button" onclick="get_next_char()" id="next">Character anzeigen</button>
+        </form>
+    </div>
+
+    <div class="sourceImage">
+        <label>
+            <a href="https://pixabay.com/de/photos/astronomie-hell-sternbild-dunkel-1867616/">Source of Image</a>
+        </label>
+    </div>
+    <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/inputForm.css">
-    <script src="../js/mafiaGenerator.js"></script>
+    <link rel="stylesheet" href="../css/outputForm.css">
+    <script src="../js/htmlController.js"></script>
+    <script src="../js/mafiaGenerator/helper.js"></script>
+    <script src="../js/mafiaGenerator/mafiaGenerator.js"></script>
     <script src="../js/windowController.js"></script>
 </body>
