@@ -1,4 +1,4 @@
-let button = document.getElementById("calcRolesBut");
+var button = document.getElementById("calcRolesButton");
 button.addEventListener("click",calc_rolles);
 
 var char_all = [];
@@ -12,7 +12,7 @@ function calc_rolles() {
                 nullOrValue(parseInt(document.getElementById("Maulwurf").value)),
                 nullOrValue(parseInt(document.getElementById("Freimaurer").value)),
                 nullOrValue(parseInt(document.getElementById("Prophet").value))];
-    console.log(char);
+
     // Summe aller Spieler
     max = char.reduce(function(total, currentValue){
         return total + currentValue;
@@ -49,7 +49,8 @@ function calc_rolles() {
     // Spieler zufällig verteilen
     shuffle(char_all);
 
-    // "Seite" wechseln
-    hideDiv("input_char");
-    showDiv("output_char");
+    // Seite wechseln
+    sessionStorage.setItem("allChar",char_all);
+    sessionStorage.setItem("max",max);
+    showOutput();
 }
