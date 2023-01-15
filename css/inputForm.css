@@ -39,6 +39,13 @@ form
     text-align: center;
 }
 
+a
+{
+    color: cyan;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
 .inputField
 {
     display: flex;
